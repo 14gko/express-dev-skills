@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Devoloper Skills </title>
 </head>
 <body>
-    
+    <h1>Developer Skills</h1>
+    <ul>
+        <% skills.forEach(function(skill) { %>
+            <li>
+                <a href="/skills/<%= skill.id %>"> <%= skill.skill %> </a>
+            </li>
+        <% }); %>
+    </ul>
+    <a href="/">My Home</a>
 </body>
 </html>

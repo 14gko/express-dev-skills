@@ -18,5 +18,3 @@ function show(req, res){
         skills: Skill.getOne(req.params.id)
     })
 }
-
-console.log('req.params');
